@@ -5,6 +5,8 @@ const Category = (): JSX.Element => {
         <View style={styles.category}>
             <View>
                 <Text style={styles.categoryTitle}>金銭支援</Text>
+                <Text style={styles.categoryTitle}>金銭支援</Text>
+                <Text style={styles.categoryTitle}>金銭支援</Text>
             </View>            
         </View>
     )
@@ -13,12 +15,11 @@ const Category = (): JSX.Element => {
 const styles = StyleSheet.create({
     category:{
         backgroundColor: '#ffffff',
-        //flexDirection: 'row',
-        //justifyContent: 'space-between',
-        paddingVertical: 18,
-        paddingHorizontal: 24
+        marginTop: 24,
+        marginLeft: 20
     },
     categoryTitle:{
+        marginVertical:12,
         fontSize: 20,
         lineHeight: 20
     }

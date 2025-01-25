@@ -1,11 +1,22 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, 
+    TouchableOpacity 
+ } from 'react-native'
+import{ AntDesign } from '@expo/vector-icons'
 
-const Header = (): JSX.Element => {
+interface Props{
+    inPress: () => void
+}
+
+const Header = ( ): JSX.Element => {
     return (
         <View style={styles.header}>
             <View style={styles.headerInner}>
                 <Text style={styles.headerTitle}>補助金サポート</Text>
-                <Text style={styles.headerHome}>Home</Text>
+                <View style={styles.headerRight} >
+                    <TouchableOpacity>
+                    <AntDesign name='home' size='26'/>
+                    </TouchableOpacity>
+                </View>                
             </View>
         </View>
     )
@@ -13,8 +24,8 @@ const Header = (): JSX.Element => {
 
 const styles = StyleSheet.create({
     header:{
-        backgroundColor: 'blue',
-        height: 104,
+        backgroundColor: '#d2b48c',
+        height: 98,
         justifyContent: 'flex-end'
     },
     headerInner:{
@@ -23,14 +34,13 @@ const styles = StyleSheet.create({
     headerTitle:{
         marginBottom: 8,
         fontSize: 20,
-        lineHeight: 32,
-        color: '#ffffff'
-    },
-    headerHome:{
+        lineHeight: 28
+        },
+    headerRight:{
+        marginRight: 14,
         position:'absolute',
         right: 16,
-        bottom: 10,
-        color: '#ffffff'
+        bottom: 10
     }   
 })
 

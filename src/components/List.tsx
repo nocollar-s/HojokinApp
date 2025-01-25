@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 const List = (): JSX.Element => {
     return(
         <View style={styles.list}>
-            <View>
+            <TouchableOpacity >
                 <Text style={styles.listTitle}>具体的なタイトル</Text>
-            </View>            
+            </TouchableOpacity>
+                       
         </View>
     )
 }
@@ -13,13 +14,12 @@ const List = (): JSX.Element => {
 const styles = StyleSheet.create({
     list:{
         backgroundColor: '#ffffff',
-        //flexDirection: 'row',
-        //justifyContent: 'space-between',
-        paddingVertical: 18,
-        paddingHorizontal: 24
+        marginTop: 16,
+        marginLeft: 20
     },
     listTitle:{
-        fontSize: 20,
+        marginVertical:10,
+        fontSize: 18,
         lineHeight: 20
     }
 })

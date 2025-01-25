@@ -1,13 +1,13 @@
 import { View, StyleSheet } from 'react-native'
 import Header from '../../components/Header'
-import Category from '../../components/Category'
+import Content from '../../components/Content'
 
-const CategoryPage =():JSX.Element => {
+const ContentPage =():JSX.Element => {
     return (
         <View style={styles.container}>
 
             <Header />
-            <Category />
+            <Content />
             
         </View>
     )
@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
     }  
 })
 
-export default CategoryPage
+export default ContentPage
