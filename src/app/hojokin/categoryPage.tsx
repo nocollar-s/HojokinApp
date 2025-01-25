@@ -1,14 +1,15 @@
 import { View, StyleSheet } from 'react-native'
-import Header from '../../components/Header'
 import Category from '../../components/Category'
 
+
 const CategoryPage =():JSX.Element => {
+
     return (
         <View style={styles.container}>
 
-            <Header />
             <Category />
-            
+            <Category />
+            <Category />
         </View>
     )
 }

@@ -1,12 +1,10 @@
 import { View, StyleSheet } from 'react-native'
-import Header from '../../components/Header'
 import List from '../../components/List'
 
 const ListPage =():JSX.Element => {
     return (
         <View style={styles.container}>
 
-            <Header />
             <List />
             <List />
             <List />

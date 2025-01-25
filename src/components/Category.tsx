@@ -1,26 +1,28 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { Link } from 'expo-router'
 
 const Category = (): JSX.Element => {
     return(
-        <View style={styles.category}>
-            <View>
-                <Text style={styles.categoryTitle}>金銭支援</Text>
-                <Text style={styles.categoryTitle}>金銭支援</Text>
-                <Text style={styles.categoryTitle}>金銭支援</Text>
-            </View>            
-        </View>
+        <Link href='/hojokin/listPage' asChild>
+            <TouchableOpacity style={styles.category}>
+                    <Text style={styles.categoryTitle}>
+                        カテゴリ：金銭支援
+                    </Text>
+            </TouchableOpacity>
+        </Link>            
+
     )
 }
 
 const styles = StyleSheet.create({
     category:{
         backgroundColor: '#ffffff',
-        marginTop: 24,
+        marginTop: 16,
         marginLeft: 20
     },
     categoryTitle:{
-        marginVertical:12,
-        fontSize: 20,
+        marginVertical: 10,
+        fontSize: 18,
         lineHeight: 20
     }
 })

@@ -1,12 +1,10 @@
 import { View, StyleSheet } from 'react-native'
-import Header from '../../components/Header'
 import Content from '../../components/Content'
 
 const ContentPage =():JSX.Element => {
     return (
         <View style={styles.container}>
 
-            <Header />
             <Content />
             
         </View>
